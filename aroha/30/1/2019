@@ -1,0 +1,129 @@
+/*function test(...num)
+{
+    var total=0;
+    for(var a of num)
+    {
+
+    total=total+a;
+    }
+    return total;
+}
+
+console.log(test(1,2,3,4,5,7,7,8));*/
+
+//----------------------------------------------------------------------------
+//Error handling, "try..catch" Program
+
+/*
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "Empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+    message.innerHTML = x + "is a correct number";
+  }
+  catch(err) {
+    message.innerHTML =  x + " is " + err;
+  }
+}
+*/
+//-----------------------------------------------------------------
+//Map Function ES6 Program  Using Arrow 
+/*
+const num=[1,2,3,4,5];
+const Dnum=num.map(x=>x*2);
+console.log(Dnum);
+
+*/
+//------------------------------------------
+// Map Function Without arrow function
+/*function test(num){
+    return num *2;
+}
+const num1 =[2,3,4,5,6];
+const numb=num1.map(test);
+console.log(numb);
+*/
+
+//--------------------------------------
+//Array destructuring Progran
+/*var foo = ['one', 'two', 'three'];
+var [one, two, three] = foo;
+console.log(one); 
+console.log(two); 
+console.log(three); 
+//---------------------------------------------------
+
+
+var a, b;
+
+[a=5, b=7] = [1,];
+console.log(a); // 1
+console.log(b); // 7*/
+//---------------------------------------
+// Object destructuring
+// var o = {p: 42, q: true};
+// var {p, q} = o;
+
+// console.log(p); // 42
+// console.log(q); // true
+
+/*var c,d;
+var a ={name:'hanamant',adress:'batakurki'};
+var {name, adress} = a;
+
+console.log(a.name);
+console.log(adress);*/
+
+//------------------------
+
+/*var a=[1,2,3,4];
+var[x,y,z]=a;
+console.log(x);
+console.log(y);
+console.log(z);
+//--------------------------------------
+*/
+//Sets in Javascript
+//  let fruits = new Set();
+// fruits.add("apple");
+// fruits.add("mango");
+// console.log(fruits.has("apple"));
+// console.log(fruits.has("abc"));
+// console.log(fruits);
+// console.log(fruits.size);
+// ------------------------------
+//for...of statement in Java Script
+
+/*var a =[1,2,3,4,5];
+for(var b of a)
+{
+    console.log(b);
+}
+*/
+//-------------------------------
+// Java Script Recursion
+// function pow(x, n) {
+//     if (n == 1) {
+//       return x;
+//     } else {
+//       return x * pow(x, n - 1);
+//     }
+//   }
+  
+//   console.log(pow(2, 1) ); 
+//-------------------------------------------------------------
+//Template literals/String In java Script
+// var a = 5;
+// var b = 10;
+// console.log(`Fifteen is ${a + b}  and\nnot ${2 * a + b}`);
+// console.log('hello'+(a+b));
+// console.log('hello', a+b );
+//==================================================================
