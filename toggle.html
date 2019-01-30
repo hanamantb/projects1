@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <title>Toggle</title>
+    <style>
+        .option-heading {
+            max-width: 200px;
+            background:#ddd; 
+            cursor:pointer;
+        }
+        .option-content {
+            max-width: 200px;
+            background:#eee;
+        }
+
+        /* Notice this class ! */
+        .is-hidden{ 
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="option-heading">
+            <span class="arrow-up is-hidden">&#9650;</span>
+            <span class="arrow-down">&#9660;</span>
+            Anantha
+            </div>
+            <div class="option-content is-hidden">
+            wow
+        </div>
+        <div class="option-heading">
+            <span class="arrow-up is-hidden">&#9650;</span>
+            <span class="arrow-down">&#9660;</span>
+            Arun
+            </div>
+            <div class="option-content is-hidden">
+            Hello
+        </div>
+        <div class="option-heading">
+            <span class="arrow-up is-hidden">&#9650;</span>
+            <span class="arrow-down">&#9660;</span>
+            Hanmanthu
+            </div>
+            <div class="option-content is-hidden">
+            Hi
+        </div>
+    </div>
+    <script>
+        $(".option-heading").click(function() {
+            $(this).next(".option-content").stop().slideToggle(500);
+            $(this).find(".arrow-up, .arrow-down").toggle();
+        });
+    </script>
+</body>
+</html>

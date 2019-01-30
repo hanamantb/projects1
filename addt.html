@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        td {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+            <table border="1">
+                <tr>
+                    <td>First Number:</td>
+                    <td><input type="text" id="fone" value="" name="fnum"/></td>
+                </tr>
+                <tr>
+                    <td>Second Number:</td>
+                    <td><input type="text" value="" id="ftwo" name="snum"/></td>
+                </tr>
+                <tr>
+                    <td>Result :</td>
+                    <td><input type="text" id="res"></td>
+                </tr>
+            </table>
+            <input type="button" onclick=add() value="Add" />
+            <input type="button" onclick=sub() value="Substraction"/>
+            <input type="button" onclick=mul() value="Multiply"/>
+            <input type="button" onclick=div() value="Divsion"/>
+    </center>
+    <script>
+        function add()
+        {
+            var x,y;
+            x=parseFloat(document.getElementById("fone").value);
+            if(!x){
+                alert("Enter frist number");
+                return;
+            }
+            y=parseFloat(document.getElementById("ftwo").value);
+            if(!y){
+                alert("Enter Second number");
+                return;
+            }
+            document.getElementById("res").value = x + y;
+            
+    
+        }
+    
+        function sub()
+        {
+            var a, b;
+            a=parseFloat(document.getElementById("fone").value);
+            if(!a){
+                alert("Enter frist number");
+                return;
+            }
+            b=parseFloat(document.getElementById("ftwo").value);
+            if(!b){
+                alert("Enter Second number");
+                return;
+            }
+            document.getElementById("res").value = a-b;
+        }
+    
+        function mul()
+        {
+            var a, b;
+            a=parseFloat(document.getElementById("fone").value);
+            if(!a){
+                alert("Enter frist number");
+                return;
+            }
+            b=parseFloat(document.getElementById("ftwo").value);
+            if(!b){
+                alert("Enter Second number");
+                return;
+            }
+            document.getElementById("res").value = a*b;
+        }
+        function div()
+        {
+            var a, b;
+            a=parseFloat(document.getElementById("fone").value);
+            if(!a){
+                alert("Enter frist number");
+                return;
+            }
+            b=parseFloat(document.getElementById("ftwo").value);
+            if(!b){
+                alert("Enter Second number");
+                return;
+            }
+            document.getElementById("res").value = a/b;
+        }
+    </script>
+</body>
+</html>
